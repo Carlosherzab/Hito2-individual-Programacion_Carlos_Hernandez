@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: hsla(0, 87%, 97%, 0.621);
+    font-family: 'Lora', serif;
+    overflow-x: hidden; /* color de fondo del index, fuente de letra*/
+}
+
+/** Navegation Menu **/
+#header{
+    position: relative;
+    width: 100%; /* controlamos el tamaño de los botones del header*/
+}
+
+
+/** Carcterísticas de la banda negra que contiene todos los botones de enlace **/
+.menu{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:9999;
+}
+.btn-menu{display: none;} /*para el display de los botones del menú*/
+.menu .logobox{margin-left: 30px;}
+.menu .logobox h1 > a{ /*estilos al icono de la web*/
+    text-decoration: none;
+    color:#fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+.menu .logobox h1 > a > i{color:#0091ca; margin-right: 10px;}
+.menu .list-container{margin-right: 30px;}
+.menu .list-container .lists{display: flex;}
+.menu .list-container .lists li{list-style: none;}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 19px;
+    margin:0px 7px;
+    padding: 5px;
+    border-radius: 3px;
+    transition: 300ms;
+}
+.menu .list-container .lists li a:hover{color:#10a1e4;} /* dándole un hover para que cuando pasemos el ratón por encima del botón salga en azul*/
+.menu .list-container .lists li a.active{color:#10a1e4;}
+
+/** Img header **/
+
+
+/** Footer **/
+footer{ /* editando el color del footer, su altura y anchura, también su margen*/
+    width: 100%;
+    height: 150px;
+    font-size: 20px;
+    margin-top: 100px;
+    background: #000;
+   
+}
+footer p{ /*editando el texto del footer, su color, el texto en el centro, etc*/
+    text-align: center;
+    line-height: 60px;
+    color:#fff;
+}
+
+h1{ /* editando el texto de encima de cada imagen*/
+    text-align: center;
+    color: #000000;
+    font-size: 50px;
+}
+
+
+
+
+h2{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
